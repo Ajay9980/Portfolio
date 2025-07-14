@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Doto:wght@100..900&family=Edu+NSW+ACT+Hand+Pre&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: cursive;
+    src: url('../src/assets/EduNSWACTHandPre-Medium.ttf');
+ }
+ 
+
+ @import "tailwindcss";
+
+ @theme{
+    --font-cursive : cursive , "sans-serif";
+    --font-Doto : Edu NSW ACT Hand Pre, "sans-serif";
+    --font-todo : Doto , "sans-serif";
+    --font-sans : Open Sans , "sans-serif"
+    --font-roboto : Roboto , "sans-serif"
+    
+ } 
