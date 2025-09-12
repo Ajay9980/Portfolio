@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import resume from '../assets/Resume2.pdf'
+import resume from '../assets/Resume.pdf'
  
 
  
