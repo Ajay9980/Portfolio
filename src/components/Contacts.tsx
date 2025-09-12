@@ -1,58 +1,33 @@
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
+import {motion} from 'framer-motion'
 import resume from '../assets/Resume2.pdf'
-import ScrollTrigger from "gsap/dist/ScrollTrigger"
+ 
 
-
-gsap.registerPlugin(ScrollTrigger)
+ 
 
 function Contact(){
 
 
 
-    useGSAP(()=>{
-
-        const tl = gsap.timeline({
-              scrollTrigger : {
-                trigger : '.form',
-                scroller : 'body',
-                markers : false,
-                start : 'top 90%',
-                end : 'top 70%',
-                scrub : true
-               
-            }
-        })
-
-        tl.from('.form',{
-            y : 50,
-            opacity : 0,
-            duration : 0.5,
-            delay : 0.4,
-            scale : 0
-        },'contact')
-        tl.from('.info',{
-            y : 50,
-            opacity : 0,
-            duration : 0.5,
-            delay : 0.4,
-            scale : 0
-        },'contact')
-
-
-
-    },[])
-
+     
     return (
        <div id="contact" className="mt-30 overflow-hidden">
-  <h1 className="text-purple-400 text-center text-[15vw] md:text-[5vw]">Contact</h1>
+  <motion.h1 
+  initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+  className="text-purple-400 text-center text-[15vw] md:text-[5vw]">Contact</motion.h1>
 
   <div className="flex flex-col md:flex-row gap-20 mb-10 md:items-start mt-15 px-4 md:px-10">
     {/* Form */}
-    <form
+    <motion.form
+    initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
       action="https://api.web3forms.com/submit"
       method="POST"
-      className="form flex flex-col bg-black w-full md:w-1/2 items-center rounded-xl shadow-xl shadow-red-400 px-4 py-6"
+      className=" flex flex-col bg-black w-full md:w-1/2 items-center rounded-xl shadow-md shadow-slate-50 px-4 py-6"
     >
       <input type="hidden" name="access_key" value="34272431-0ac5-41ed-bfb2-0b505960605c" />
 
@@ -91,10 +66,15 @@ function Contact(){
       >
         <i className="ri-send-plane-fill mr-4"></i>Send Message
       </button>
-    </form>
+    </motion.form>
 
     {/* Contact Info */}
-    <div className="info w-full md:w-1/2 px-4">
+    <motion.div 
+    initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+    className="info w-full md:w-1/2 px-4">
       <h1 className="text-3xl md:text-[3vw] mb-4 text-purple-400">Contact Information</h1>
       <p className="text-lg md:text-2xl mb-5">
         Fill up the form and send me your message or contact through the details below.
@@ -129,7 +109,7 @@ function Contact(){
       >
         <i className="ri-download-line mr-2"></i>Resume
       </a>
-    </div>
+    </motion.div>
   </div>
 </div>
 

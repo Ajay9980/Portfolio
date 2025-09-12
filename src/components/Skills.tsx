@@ -1,3 +1,4 @@
+import {motion} from 'framer-motion'
 import js from '../assets/javascript.png' 
 import ts from '../assets/typescript.png'
 import python from '../assets/python.png'
@@ -26,133 +27,16 @@ import team from '../assets/team2.png'
 import solving from '../assets/solving.png'
 import communication from '../assets/communication.png'
 import time from '../assets/time.png'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+ 
 
 
-gsap.registerPlugin(ScrollTrigger)
+ 
 
 
 function Skill(){
 
 
-  useGSAP(()=>{
-
-    gsap.from('.left1',{
-
-      // section1
-      x : -1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.left1',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-        
-      }
-    })
-
-    gsap.from('.right1',{
-
-      x : 1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.right1',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-
-      }
-    })
-
-
-    // section2
-
-    gsap.from('.left2',{
-
-      x : -1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.left2',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-        
-      }
-    })
-
-
-
-
-    gsap.from('.right2',{
-
-      x : 1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.right2',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-
-      }
-    })
-     
-
-
-
-    // section3
-
-    gsap.from('.left3',{
-
-      x : -1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.left3',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-        
-      }
-    })
-
-
-
-
-    gsap.from('.right3',{
-
-      x : 1000,
-      opacity : 0,
-      duration : 0.7,
-      delay : 0.5,
-      scrollTrigger : {
-        trigger : '.right3',
-        scroller : 'body',
-        markers : false,
-        end : 'top 60%',
-        scrub : 2
-
-      }
-    })
-
-
-
-  },[])
+ 
 
 
 
@@ -161,13 +45,23 @@ function Skill(){
         <div id="skill" className='overflow-hidden'>
 
             <section   className="px-6 md:px-20 py-16 mt-30 text-white font-sans">
-  <h2 className=" font-sans mb-10 text-purple-400 text-center text-[15vw]  md:text-[5vw]">Skills</h2>
+  <motion.h2 
+  initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+  className=" font-sans mb-10 text-purple-400 text-center text-[15vw]  md:text-[5vw]">Skills</motion.h2>
 
   <div className=" md:grid md:grid-cols-2   text-neutral-300 text-lg font-sans">
 
     
     {/* Languages */}
-    <div className='left1 flex flex-col justify-center items-center mt-10  '>
+    <motion.div 
+    initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+    className='left1 flex flex-col justify-center items-center mt-10  '>
   <h3 className="md:text-[4vw] text-[7vw]  text-purple-300 ">Languages</h3>
 
   <ul className="flex text-md flex-wrap justify-center gap-8 mt-4 ">
@@ -196,11 +90,16 @@ function Skill(){
       <span className="text-white mt-2 text-center">CSS</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
 
     {/* Frontend */}
-   <div className='right1 flex flex-col justify-center items-center mt-10'>
+   <motion.div 
+   initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+   className='right1 flex flex-col justify-center items-center mt-10'>
   <h3 className="md:text-[4vw] text-[7vw]  text-purple-300 mb-4">Frontend</h3>
 
   <ul className="flex flex-wrap  justify-center gap-8 mt-4">
@@ -229,14 +128,20 @@ function Skill(){
       <span className="text-white mt-2 text-center">FramerMotion</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
  
 
 
     
     {/* Backend */}
-   <div className='left2 flex flex-col justify-center items-center mt-30'>
+   <motion.div 
+   
+   initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+   className='left2 flex flex-col justify-center items-center mt-30'>
   <h3 className="md:text-[4vw]  text-[7vw]  text-purple-300 mb-4">Backend & APIs</h3>
 
   <ul className="flex flex-wrap justify-center gap-8">
@@ -261,11 +166,16 @@ function Skill(){
       <span className="text-white mt-2 text-center">WebSocket</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
 
     {/* Database */}
-   <div className='right2 flex flex-col justify-center items-center mt-30'>
+   <motion.div 
+   initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+   className='right2 flex flex-col justify-center items-center mt-30'>
   <h3 className="md:text-[4vw] text-[7vw]  text-purple-300 mb-4">Databases</h3>
 
   <ul className="flex flex-wrap justify-center gap-8 mt-4">
@@ -278,12 +188,17 @@ function Skill(){
       <span className="text-white mt-2 text-center">PostgreSQL</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
 
  
     {/* Tools */}
-   <div className='left3 flex flex-col justify-center items-center mt-30'>
+   <motion.div 
+   initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+   className='left3 flex flex-col justify-center items-center mt-30'>
   <h3 className="md:text-[4vw] text-[7vw]  text-purple-300 mb-4">Tools & Platforms</h3>
 
   <ul className="flex flex-wrap justify-center gap-8">
@@ -308,11 +223,16 @@ function Skill(){
       <span className="text-white mt-2 text-center">Render</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
 
     {/* Soft Skills */}
-    <div className='right3 flex flex-col justify-center items-center mt-30'>
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}          // starting state
+                    whileInView={{ opacity: 1, y: 0 }}       // animate when in view
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.3 }}
+    className='right3 flex flex-col justify-center items-center mt-30'>
   <h3 className="md:text-[4vw] text-[7vw]  text-purple-300 mb-4">Soft Skills</h3>
 
   <ul className="flex flex-wrap justify-center gap-8">
@@ -333,7 +253,7 @@ function Skill(){
       <span className="text-white mt-2 text-center">Time Management</span>
     </li>
   </ul>
-</div>
+</motion.div>
 
   </div>
 </section>
