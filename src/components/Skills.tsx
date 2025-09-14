@@ -6,7 +6,6 @@ import sql from '../assets/sql.png'
 import html from '../assets/html.png'
 import css from '../assets/css.png'
 import react from '../assets/react.svg'
-import nextjs from '../assets/Next.js2.png'
 import nodejs from '../assets/Node.js.png'
 import tailwind from '../assets/Tailwind CSS.png'
 import bootstrap from '../assets/Bootstrap.png'
@@ -107,10 +106,7 @@ function Skill(){
       <img src={react} alt="React.js" className='w-12 h-12' />
       <span className="text-white mt-2 text-center">React.js</span>
     </li>
-    <li className="flex flex-col items-center">
-      <img src={nextjs} alt="Next.js" className='w-12 h-12' />
-      <span className="text-white mt-2 text-center">Next.js</span>
-    </li>
+    
     <li className="flex flex-col items-center">
       <img src={tailwind} alt="Tailwind CSS" className='w-12 h-12' />
       <span className="text-white mt-2 text-center">Tailwind CSS</span>

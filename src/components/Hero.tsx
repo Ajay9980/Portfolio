@@ -40,7 +40,7 @@ function Hero(){
         <h1   className="split font-roboto text-center mt-10 text-[7vw] md:text-[6vw] font-bold">          
             Hello, I'm <span className="text-purple-400">Ajay Chavan</span>
         </h1>
-        <h1 className="bio text-center text-lg mx-2 md:text-[2vw]  text-neutral-500">Full Stack MERN Developer · Next.js & AI Enthusiast · UI/UX Focused  </h1>
+        <h1 className="bio text-center text-lg mx-2 md:text-[2vw]  text-neutral-500">Full Stack MERN Developer ·   AI Enthusiast · UI/UX Focused  </h1>
       </div>
     </div>
   )

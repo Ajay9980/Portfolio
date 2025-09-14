@@ -47,7 +47,7 @@ function About(){
             </div>
             <section className="desc  ml-3  px-4 py-8 md:w-1/2">
                 <p className="text-lg md:text-2xl text-neutral-300 leading-relaxed">
-                    I’m <span className="font-bold text-white">Ajay Chavan</span>, a passionate Full Stack Developer with hands-on experience building modern web applications using the <span className="text-purple-300 font-semibold">MERN stack</span>, <span className="text-purple-300">PostgreSQL</span>, and <span className="text-purple-300">Next.js</span>. I specialize in crafting responsive, interactive user interfaces with <span className="text-purple-300">React</span> and <span className="text-purple-300">Tailwind CSS</span>, enhanced by animation libraries like <span className="text-purple-300">GSAP</span> and <span className="text-purple-300">Framer Motion</span>.
+                    I’m <span className="font-bold text-white">Ajay Chavan</span>, a passionate Full Stack Developer with hands-on experience building modern web applications using the <span className="text-purple-300 font-semibold">MERN stack</span>and <span className="text-purple-300">PostgreSQL</span> I specialize in crafting responsive, interactive user interfaces with <span className="text-purple-300">React</span> and <span className="text-purple-300">Tailwind CSS</span>, enhanced by animation libraries like <span className="text-purple-300">GSAP</span> and <span className="text-purple-300">Framer Motion</span>.
                 </p>
 
                 <p className="text-lg md:text-2xl text-neutral-300 leading-relaxed mt-4">
