@@ -12,9 +12,20 @@ const experiences = [
   "Managed CI/CD pipelines; deployed on Vercel, Railway, and AWS EC2.",
   "Contributed to UI/UX improvements and collaborated in Agile sprints.",
   "Performed testing and debugging with Postman and Jest.",
-],
+]
 
   },
+  {
+    role: "Frontend Developer Intern",
+    company: "Ycanary",
+    duration: "Oct 2025 – Present",
+    responsibilities: [
+   "Developing and integrating dynamic frontend pages using Vue.js & TypeScript",
+   "Collaborating closely with backend engineers to connect APIs and ensure seamless data flow.",
+   "Implementing smooth UI/UX interactions and custom animation logic.",
+   "Contributing to feature development, optimizing performance, and maintaining code quality in Agile sprints."
+]
+  }
 ];
 
 const Experience = () => {
