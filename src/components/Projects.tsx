@@ -68,6 +68,8 @@ function Project() {
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>Node.js</button>
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>Multer & Cloudinary</button>
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>Razorpay</button>
+                        <button className='bg-purple-500 py-2 px-3 rounded-full'>Gemini AI</button>
+                        <button className='bg-purple-500 py-2 px-3 rounded-full'>RBAC Middleware</button>
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>TypeScript</button>
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>Prisma</button>
                         <button className='bg-purple-500 py-2 px-3 rounded-full'>PostgreSQL</button>

@@ -75,6 +75,7 @@ useGSAP(()=>{
             <h1 className="navs"><a href="#hero">Home</a> </h1>
             <h1 className="navs"><a href="#about">About</a></h1>
             <h1 className="navs"><a href="#skill">Skill</a> </h1>
+            <h1 className="navs"><a href="#experience">Experience</a> </h1>
             <h1 className="navs"><a href="#project">Project</a></h1>
             <h1 className="navs"><a href="#contact">Contact</a></h1>
            

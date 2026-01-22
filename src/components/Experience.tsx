@@ -16,14 +16,14 @@ const experiences = [
 
   },
   {
-    role: "Frontend Developer Intern",
+    role: "Software Development Intern",
     company: "Ycanary",
     duration: "Oct 2025 – Present",
     responsibilities: [
-   "Developing and integrating dynamic frontend pages using Vue.js & TypeScript",
-   "Collaborating closely with backend engineers to connect APIs and ensure seamless data flow.",
-   "Implementing smooth UI/UX interactions and custom animation logic.",
-   "Contributing to feature development, optimizing performance, and maintaining code quality in Agile sprints."
+   "Developed production-ready frontend features using Vue.js, TypeScript, Pinia, and Vuetify for a SaaS product.",
+   "Built an end-to-end board-based system to manage multiple social media platforms with individual, global, and automated refresh mechanisms (5-30 min).",
+   "Implemented global search and reusable notification components shared across multiple modules.",
+   " Collaborated with backend engineers, worked on shared Git branches, resolved merge conflicts, and delivered features within tight deadlines."
 ]
   }
 ];
