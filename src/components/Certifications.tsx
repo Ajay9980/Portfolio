@@ -15,7 +15,7 @@ const certifications = [
   },
   {
     title: "LeetCode 50 Days Badge",
-    issuer: "LinkedIn Learning",
+    issuer: "LeetCode",
     link: "https://drive.google.com/file/d/1q0FzuKvfKgm39RhTpcN3klWpu1Xz3eY0/view?usp=drive_link",    
   },
 ];
