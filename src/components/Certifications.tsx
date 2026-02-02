@@ -16,6 +16,7 @@ const certifications = [
   {
     title: "LeetCode 50 Days Badge",
     issuer: "LeetCode",
+    date: "18 Dec 2025",
     link: "https://drive.google.com/file/d/1q0FzuKvfKgm39RhTpcN3klWpu1Xz3eY0/view?usp=drive_link",    
   },
 ];
